@@ -1,0 +1,114 @@
+@import "fonts.css";
+@import "default.css";
+
+body {
+	background: dimgray;
+	overflow: hidden;
+}
+
+img.background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	filter: brightness(55%);
+	z-index: -10;
+}
+
+/* header */
+
+header {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	z-index: 10;
+	top: 0;
+}
+
+header ul {
+	list-style: none;
+	width: 70rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header ul li {
+	margin: 6rem;
+}
+
+header ul li img {
+	width: 6.4rem;
+	height: 6.4rem;
+}
+
+header ul li a {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+/* footer */
+
+footer {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	z-index: 10;
+	bottom: 0;
+}
+
+footer ul {
+	list-style: none;
+	width: 25rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+footer ul li {
+	margin: 6rem;
+}
+
+footer ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* carousel */
+
+div.carousel {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+div.carousel-cell {
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 6rem;
+}
+
+div.carousel-cell a {
+	font-size: 12rem;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	text-decoration: none;
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+.carousel-cell.is-selected a {
+	color: white;
+	-webkit-text-stroke: 0 white;
+}
