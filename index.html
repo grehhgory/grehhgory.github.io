@@ -4,48 +4,63 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
 		<link href="assets/favicon-32.png" rel="shortcut icon" type="image/x-icon" />
 		<link href="assets/favicon-256.png" rel="apple-touch-icon" />
+
 		<title>Gregory Lim</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+		<!-- styles -->
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 		<link rel="stylesheet" href="css/index.css" />
 
+		<!-- scripts -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="js/loader.js"></script>
 	</head>
 	<body>
-		<img class="background" src="assets/transparent.png" />
+		<loader>
+			<loading-icon></loading-icon>
 
-		<header>
-			<ul>
-				<li>
-					<a href="#">
-						<img src="assets/logo-white-512.png" />
-					</a>
-				</li>
-				<li>
-					<a href="about.html">ABOUT</a>
-				</li>
-			</ul>
-		</header>
+			<loading-bar><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Loading..." /></loading-bar>
+		</loader>
 
-		<div class="carousel">
-			<div class="carousel-cell">
-				<a href="rhytra.html">Rhytra</a>
+		<loadee>
+			<img class="background" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt />
+
+			<header>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="assets/logo-white-512.png" />
+						</a>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+				</ul>
+			</header>
+
+			<div class="carousel">
+				<div class="carousel-cell">
+					<a href="rhytra.html">Rhytra</a>
+				</div>
+				<div class="carousel-cell">
+					<a href="calculatte.html">Calculatte</a>
+				</div>
 			</div>
-			<div class="carousel-cell">
-				<a href="calculatte.html">Calculatte</a>
-			</div>
-		</div>
 
-		<footer>
-			<ul>
-				<li><a class="material-icons" title="E-mail" href="mailto:gregorylimeurhen@gmail.com" target="_blank">email</a></li>
-				<li><a class="material-icons" title="GitHub" href="https://github.com/sylgory" target="_blank">code</a></li>
-				<li><a class="material-icons" title="Medium" href="https://medium.com/@sylgory" target="_blank">bookmark</a></li>
-			</ul>
-		</footer>
+			<footer>
+				<ul>
+					<li><a class="material-icons" title="E-mail" href="mailto:gregorylimeurhen@gmail.com" target="_blank">email</a></li>
+					<li><a class="material-icons" title="GitHub" href="https://github.com/grehhgory" target="_blank">code</a></li>
+					<li><a class="material-icons" title="Medium" href="https://medium.com/@sylgory" target="_blank">bookmark</a></li>
+				</ul>
+			</footer>
+		</loadee>
 
 		<script src="js/index.js"></script>
 	</body>
