@@ -1,0 +1,94 @@
+loader {
+	background: var(--loader-background-color);
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 1000;
+}
+
+loading-icon {
+	background: var(--loading-icon-background-image);
+	background-size: cover;
+	width: 12.8rem;
+	height: 12.8rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+}
+
+loading-bar {
+	width: 50rem;
+	height: 0.3rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 12.5%;
+	transition: all 0.1s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+
+loading-bar img {
+	position: absolute;
+	top: 50rem;
+	left: 0;
+	filter: drop-shadow(0 -50rem 0 var(--loader-background-color));
+}
+
+loading-bar::after {
+	content: "";
+	position: absolute;
+	top: 50rem;
+	left: 0;
+	filter: drop-shadow(0 -50rem 0 var(--loading-bar-color));
+	width: 50rem;
+	height: 0.3rem;
+	background: url("../assets/loading-bar.png") no-repeat left 100%;
+	background-size: 50rem 0.3rem;
+	background-position-x: 0;
+	-webkit-animation: loading-bar 2s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
+	animation: loading-bar 2s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
+}
+
+@-webkit-keyframes loading-bar {
+	0% {
+		width: 0;
+		background-size: 50rem 0.3rem;
+	}
+	100% {
+		width: 50rem;
+	}
+}
+
+@keyframes loading-bar {
+	0% {
+		width: 0;
+		background-size: 50rem 0.3rem;
+	}
+	100% {
+		width: 50rem;
+	}
+}
+
+@media screen and (max-width: 719px) {
+	.loading-bar .loading-bar {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 719px) and (orientation: landscape) {
+	.loading-bar .loading-bar {
+		display: block !important;
+		transform: translate(-50%, -50%) scale(0.7) !important;
+	}
+}
+
+@supports not (filter: drop-shadow(0 0 0 #fff)) {
+	.loading-bar:before {
+		content: "Your browser does not support the loading animation.";
+	}
+}

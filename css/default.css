@@ -1,3 +1,19 @@
+@import "fonts.css";
+
+:root {
+	/* light mode (default) */
+	--loading-icon-background-image: url("../assets/logo-dark-512.png");
+	--loader-background-color: #f5f5f5;
+	--loading-bar-color: #636363;
+}
+
+html.dark-mode {
+	/* dark mode */
+	--loading-icon-background-image: url("../assets/logo-light-512.png");
+	--loader-background-color: #2c2b30;
+	--loading-bar-color: #ebebeb;
+}
+
 *,
 html,
 body {
@@ -14,4 +30,9 @@ body {
 	font-family: "Inter", Arial, Helvetica, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
+}
+
+loadee {
+	opacity: 0;
+	z-index: 0;
 }

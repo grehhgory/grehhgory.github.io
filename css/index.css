@@ -1,5 +1,5 @@
-@import "fonts.css";
 @import "default.css";
+@import "loader.css";
 
 body {
 	background: white;
@@ -108,7 +108,7 @@ div.carousel-cell a {
 	opacity: 1;
 }
 
-.carousel-cell.is-selected a {
+div.carousel-cell.is-selected a {
 	color: white;
 	-webkit-text-stroke: 0 white;
 }
