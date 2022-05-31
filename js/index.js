@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
 			percentPosition: true,
 			cellAlign: "center",
 		});
-	}, 2000);
+	}, 3000);
 
 	// change background according to selected carousel cell
 	$(".carousel").on("change.flickity", function (event, index) {
