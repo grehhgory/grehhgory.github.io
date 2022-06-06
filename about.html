@@ -11,38 +11,56 @@
 
 		<title>About - Gregory Lim</title>
 
+		<!-- prioritised loadees -->
+		<link rel="preload" as="style" href="css/fonts.css" />
+
 		<!-- styles -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="css/loader.css" />
 		<link rel="stylesheet" href="css/about.css" />
 
 		<!-- scripts -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/loader.js"></script>
 		<script src="js/about.js"></script>
 	</head>
 	<body>
-		<img class="background" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt />
+		<loader>
+			<loading-icon></loading-icon>
 
-		<header>
-			<ul>
-				<li>
-					<a href="index.html">
-						<img src="assets/logo-white-512.png" />
-					</a>
-				</li>
-				<li>
-					<a href="about.html">ABOUT</a>
-				</li>
-			</ul>
-		</header>
+			<loading-bar><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Loading..." /></loading-bar>
+		</loader>
 
-		<section>
-			<p>
-				Hi, I'm a designer, developer and writer based in Singapore.<br />
-				I'm passionate about improving lives through disruptive products<br />
-				built on beautiful and efficient design.<br />
-				<br />
-				Got ideas? Let's chat on <a href="https://www.instagram.com/grehhgory/" target="_blank">Instagram</a>.
-			</p>
-		</section>
+		<loadee>
+			<img class="background" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt />
+
+			<header>
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="assets/logo-white-512.webp" />
+						</a>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+				</ul>
+			</header>
+
+			<section>
+				<p>
+					Hi, I'm a designer, developer and writer based in Singapore.<br />
+					I'm passionate about improving lives through disruptive products<br />
+					built on beautiful and efficient design.<br />
+					<br />
+					Got ideas? Let's chat on <a href="https://www.instagram.com/grehhgory/" target="_blank">Instagram</a>.
+				</p>
+			</section>
+		</loadee>
+
+		<!-- forced loadees -->
+		<img style="display: none; visibility: hidden" src="assets/lofi-960.webp" alt />
+		<img style="display: none; visibility: hidden" src="assets/lofi-1920.webp" alt />
+		<img style="display: none; visibility: hidden" src="assets/lofi-3840.webp" alt />
 	</body>
 </html>
