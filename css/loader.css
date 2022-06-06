@@ -50,8 +50,8 @@ loading-bar::after {
 	background: url("../assets/loading-bar.png") no-repeat left 100%;
 	background-size: 50rem 0.3rem;
 	background-position-x: 0;
-	-webkit-animation: loading-bar 3s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
-	animation: loading-bar 3s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
+	-webkit-animation: loading-bar 1s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
+	animation: loading-bar 1s cubic-bezier(0.28, 0.11, 0.32, 1) 1 forwards;
 }
 
 @-webkit-keyframes loading-bar {

@@ -9,7 +9,7 @@ body {
 /* background */
 img.background {
 	height: 100vh;
-	filter: brightness(60%);
+	filter: brightness(33%);
 }
 
 /* header */

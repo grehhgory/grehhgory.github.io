@@ -2,13 +2,11 @@
 
 body {
 	background: #f5f5f5;
-	background-size: cover;
-	background-position: 50% 50%;
 }
 
 img.background {
 	height: 37.5vh;
-	filter: brightness(75%);
+	filter: brightness(50%);
 }
 
 section {

@@ -2,14 +2,14 @@
 
 :root {
 	/* light mode (default) */
-	--loading-icon-background-image: url("../assets/logo-dark-512.png");
+	--loading-icon-background-image: url("../assets/logo-dark-512.webp");
 	--loader-background-color: #f5f5f5;
 	--loading-bar-color: #636363;
 }
 
 .dark-mode {
 	/* dark mode */
-	--loading-icon-background-image: url("../assets/logo-light-512.png");
+	--loading-icon-background-image: url("../assets/logo-light-512.webp");
 	--loader-background-color: #2c2b30;
 	--loading-bar-color: #ebebeb;
 }
@@ -35,11 +35,13 @@ body {
 
 /* selection */
 *::selection {
-	background: rgba(0, 0, 0, 0.05);
+	background: rgba(0, 0, 0, 1);
+	color: floralwhite;
 }
 
 *::-moz-selection {
-	background: rgba(0, 0, 0, 0.05);
+	background: rgba(0, 0, 0, 1);
+	color: floralwhite;
 }
 
 /* loadee */
