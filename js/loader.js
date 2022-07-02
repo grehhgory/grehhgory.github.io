@@ -11,9 +11,9 @@ var bg_w;
 
 window.addEventListener("load", function () {
 	// get monitor width and set background according to monitor width
-	if (screen.width <= 960) bg_w = 960;
-	else if (screen.width > 960 && screen.width <= 1920) bg_w = 1920;
-	else if (screen.width > 1920) bg_w = 3840;
+	if (screen.width < 960) bg_w = 960;
+	else if (screen.width >= 960 && screen.width < 1920) bg_w = 1920;
+	else if (screen.width >= 1920) bg_w = 3840;
 	setBackground();
 
 	// force load images
