@@ -94,7 +94,7 @@ header ul li img {
 }
 
 header ul li a {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: 700;
 	color: white;
 	text-decoration: none;
@@ -113,32 +113,44 @@ section a:hover {
 }
 
 /* media queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
 	html {
-		font-size: 8px;
+		font-size: 7px;
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 425px) {
 	html {
-		font-size: 8.5px;
+		font-size: 7px;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	html {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	html {
 		font-size: 9px;
 	}
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
 	html {
-		font-size: 9.5px;
+		font-size: 10px;
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1920px) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	html {
+		font-size: 12px;
 	}
 }
