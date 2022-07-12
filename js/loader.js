@@ -1,3 +1,4 @@
+// allow for dark mode
 const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themeSetting = localStorage.getItem("color-schema") || "auto";
 if (themeSetting === "dark" || (prefersDark && themeSetting !== "light-mode")) {
@@ -6,8 +7,12 @@ if (themeSetting === "dark" || (prefersDark && themeSetting !== "light-mode")) {
 
 window.addEventListener("click", () => document.documentElement.classList.toggle("dark-mode"), false);
 
-$("loadee").css("opacity", "0");
+
+// handle loading
 var bg_w;
+
+// make loadee invisible first
+$("loadee").css("opacity", "0");
 
 window.addEventListener("load", function () {
 	// get monitor width and set background according to monitor width
@@ -34,3 +39,9 @@ window.addEventListener("load", function () {
 		}
 	}
 });
+
+// load rest of page after images have been loaded
+function loadPage() {
+	$("loadee").css("opacity", "1");
+	$("loader").hide();
+}
