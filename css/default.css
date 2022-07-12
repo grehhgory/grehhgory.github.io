@@ -1,20 +1,22 @@
-/**
-	for base styles
+/*
+	for base
 	and uncategorised styles that apply to every page
-**/
+
+	fonts -> default -> index/about etc.
+*/
 
 @import "fonts.css";
 
 :root {
 	/* light, default mode */
-	--loading-icon-background-image: url("../assets/logo-dark-512.webp");
+	--loading-icon-background-image: url("../assets/logo-dark-108.svg");
 	--loader-background-color: #f5f5f5;
 	--loading-bar-color: #636363;
 }
 
 .dark-mode {
 	/* dark mode */
-	--loading-icon-background-image: url("../assets/logo-light-512.webp");
+	--loading-icon-background-image: url("../assets/logo-light-108.svg");
 	--loader-background-color: #2c2b30;
 	--loading-bar-color: #ebebeb;
 }
@@ -89,8 +91,8 @@ header ul li {
 }
 
 header ul li img {
-	width: 6.4rem;
-	height: 6.4rem;
+	width: 5.6rem;
+	height: 5.6rem;
 }
 
 header ul li a {
